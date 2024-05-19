@@ -4,12 +4,7 @@ function App() {
   return (
     <div className="App">
       <h1>New git Repository</h1>
-      <h1>hello pankaj welcome new branch</h1>
-      <h1>krushna is added</h1>
-      <pre>i am ashu</pre>
-      <p>a2z</p>
-      <h1>krushna is added</h1>
-      <h1>hello Prajwal kale</h1>
+    
     </div>
     );
 }
