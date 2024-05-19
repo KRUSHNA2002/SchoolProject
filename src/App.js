@@ -3,13 +3,16 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>ashish bahadure git ashish </h1>
+      <h1>New git Repository</h1>
       <h1>hello pankaj welcome new branch</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
       <h1>krushna is added</h1>
+<<<<<<< HEAD
       <pre>i am ashu</pre>
+=======
+      <p>a2z</p>
+>>>>>>> 1bc55ad7ed1c3e07aa4d033fafcddfdbb5be46b5
     </div>
-  );
+    );
 }
 
 export default App;
