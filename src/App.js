@@ -7,7 +7,7 @@ function App() {
       <h1>hello pankaj welcome new branch</h1>
       <h1>krushna is added</h1>
       <h1>hello Prajwal kale</h1>
-      <h2>hello amit hi </h2>
+      
     </div>
   );
 }
