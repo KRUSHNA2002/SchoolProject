@@ -4,8 +4,7 @@ import AboutPage from './components/AboutPage';
 function App() {
   return (
 <>
-<AboutPage/>
-<h1>about</h1>
+<h1>app component</h1>
 </>
   );
 }
