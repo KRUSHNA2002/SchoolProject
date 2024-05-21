@@ -1,13 +1,15 @@
 import './App.css';
-import Footer from './components/common/Footer';
-import Header from './components/common/Header';
+// import Footer from './components/common/Footer';
+// import Header from './components/common/Header';
+import About from './pages/About';
+
 
 function App() {
   return (
     <>
-      <h1>app component</h1>
-      <Footer />
-      <Header />
+      {/* <Footer /> */}
+      <About/>
+      {/* <Header /> */}
     </>
   );
 }
