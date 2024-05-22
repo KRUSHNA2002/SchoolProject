@@ -1,18 +1,97 @@
-.bg-img
-{
-    background-image: url('../assets/images/about-bg.avif');
+.bg-img {
+    background: linear-gradient(rgba(29, 28, 28, 0.44), rgba(17, 15, 15, 0.44)), url('../assets/images/about-bg1.webp') center center no-repeat;
     height: 450px;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    position: fixed;
-    top: 0px;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.about-heading
-{
+
+.about-heading {
     font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
 }
+
+.about-link {
+
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Courses section */
+
+.courses-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-family: cursive;
+}
+
+.teacher-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-family: cursive;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated-slide-in-left {
+    animation: slideInLeft 0.9s ease forwards;
+}
+
+/* Define your animation classes */
+@keyframes zoomOut {
+    from {
+        transform: scale(0.5);
+        /* Scale down to 50% */
+        opacity: 0;
+    }
+
+    to {
+    
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.animated-zoom-out {
+    animation: zoomOut 0.9s ease forwards;
+}
+/* Define your animation classes */
+@keyframes slideDown {
+    from {
+      transform: translateY(-50px); 
+      transform: scale(1.4);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animated-slide-down {
+    animation: slideDown 0.9s ease forwards;
+  }
+  
