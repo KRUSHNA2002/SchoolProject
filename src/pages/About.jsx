@@ -5,14 +5,24 @@ import { Link } from 'react-router-dom';
 import AboutCard from '../components/sectioncompo/about/AboutCard';
 import Classes from '../components/sectioncompo/about/Classes';
 import Teachers from '../components/sectioncompo/about/Teachers';
+import Testimonial from '../components/sectioncompo/about/Testimonial';
+import Facility from '../components/sectioncompo/about/Facility';
 
 const About = () => {
+
+        const scrollToTop = () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        };
+
     return (
         <>
             <section>
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-md-12 bg-img bg-danger">
+                        <div className="col-md-12 bg-img">
                             <div className="row">
                                 <div className={`text-center fw-bold text-white about-heading animated-slide-down`}>
                                     About Page
@@ -20,7 +30,9 @@ const About = () => {
                                 <div className={`about-link animated-slide-down`}>
                                     <Link className='text-dark text-decoration-none disabled-link' style={{ fontSize: "20px" }} to='/about'>About</Link>&nbsp;&nbsp;
                                     <span className='text-dark mt-1'> / </span>&nbsp;&nbsp;
-                                    <Link className='text-white text-decoration-none mt-1' to='/'>Home</Link>
+                                    <Link className='text-white text-decoration-none mt-1' to='/'>Home</Link>&nbsp;
+                                    <span className='text-dark mt-1' > / </span>&nbsp;&nbsp;
+                                    <Link className='text-white text-decoration-none mt-1' to='/feedback' >FeedBack</Link>
                                 </div>
                             </div>
                         </div>
@@ -39,7 +51,7 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Courses section start */}
+            {/* Courses section start******************************************************** */}
             <section>
                 <div className='courses-heading animated-slide-down'>
                     <h1>Our Courses</h1>
@@ -54,10 +66,10 @@ const About = () => {
                 </div>
             </section>
 
-            {/* Teacher section start */}
+            {/* Teacher section start **************************************************************/}
             <section>
-                <div className='teacher-heading animated-slide-down'>
-                    <h1>Our Teachers</h1>
+                <div className='teacher-heading '>
+                    <h1>Our Team</h1>
                 </div>
                 <div className="container">
                     <div className="row mt-5">
@@ -65,6 +77,47 @@ const About = () => {
                             <Teachers />
                         </div>
 
+                    </div>
+                </div>
+            </section>
+
+            {/* Facility section start ************************************************************ */}
+
+            <section>
+                <div className="container">
+                    <div className='facility-heading mt-5 mb-5' >
+                        <h1>Our Facilities</h1>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col-md-12">
+                            <Facility />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* testimonial section start ***********************************************************/}
+
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div className='testi-heading mt-5 mb-5' >
+                            <h1>Testimonial</h1>
+                        </div>
+                        <Testimonial />
+                    </div>
+                </div>
+            </section>
+
+            {/* uparrow for go top section */}
+
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div >
+                           <p className='uparrow' onClick={scrollToTop}> <i className="fa-solid fa-arrow-up"></i></p>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -98,4 +98,120 @@
   .animated-slide-down {
     animation: slideDown 0.9s ease forwards;
   }
+
+  /* testimonial css */
+
+.testimonial {
+  width: 800px; /* Adjust width as needed */
+  overflow: hidden;
+}
+
+.testimonial h3,
+.testimonial p,
+.testimonial blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial blockquote {
+  margin-top: 10px; /* Adjust spacing */
+}
+
+.slide-in {
+  animation: slideIn 1s forwards;
+}
+
+.slide-out {
+  animation: slideOut 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.testi-div
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.testi-heading
+{
+    font-family: cursive;
+    text-align: center;
+}
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
   
+  .animate-zoom {
+    animation: zoomIn 1s forwards;
+  }
+  
+
+  /* facility css start */
+
+  .facility-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 'auto';
+    padding: '0px';
+}
+.facility-heading
+{
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* uparrow css section */
+
+.uparrow {
+    height: 50px;
+    width: 50px;
+    background-color: yellow;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-radius: 50%;
+    left: 1400px; /* Default position */
+    top: 550px; /* Default position */
+}
+
+@media (max-width: 1200px) {
+    .uparrow {
+        left: 850px; /* Adjusted position for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .uparrow {
+        left: 250px; /* Further adjusted position for mobile screens */
+        top: 400px; /* Adjusted position for mobile screens */
+    }
+}
