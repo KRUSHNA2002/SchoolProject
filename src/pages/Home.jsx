@@ -1,39 +1,56 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import Header from "../components/common/Header";
+import Facilities from "../components/sectioncompo/Home/Facilities";
+import FacilitiesSection from "../components/sectioncompo/Home/FacilitiesSection";
+import Slider from "../components/sectioncompo/Home/Slider";
+import MiniHeader from "../components/common/MiniHeader";
+import Contact from "../components/sectioncompo/Home/Contact";
 
 const About = () => {
-    return (
-        <>
-            {/* About section start */}
+  return (
+    <>
+      {/* Mini Navbar */}
+      <MiniHeader />
+      {/* Navbar */}
+      <Header />
+      {/* Slider */}
+      <section>
+        <Slider />
+      </section>
 
-            {/*  section first background image fiexed */}
-
-            <section>
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-md-12 bg-img-home "  >
-                            <div className="row">
-                                <div className='text-center fw-bold text-white home-heading animated-slide-down ' >
-                                    Home Page
-                                </div>
-                                <div className='home-link animated-slide-down ' >
-                                    <Link className='text-dark text-decoration-none' style={{fontSize:'20px'}} to='/' >Home</Link>&nbsp;&nbsp;&nbsp;
-                                    <span className='text-dark mt-1' > / </span>&nbsp;&nbsp;
-                                    <Link className='text-white text-decoration-none mt-1' to='/about' >About</Link>&nbsp;
-                                    <span className='text-dark mt-1' > / </span>&nbsp;&nbsp;
-                                    <Link className='text-white text-decoration-none mt-1' to='/feedback' >FeedBack</Link>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      {/* Facilities */}
+      <section>
+        <div className="container-fluid  facilities_bg">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="container">
+                <div className="row">
+                  <div class="col-md-12 p-2">
+                    <h1 class="text-center mt-3">
+                      School <b className="text-danger">Facilities</b>
+                    </h1>
+                    <p class="text-center">
+                      Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor
+                      ut dolore lorem kasd vero ipsum sit eirmod sit. <br />{" "}
+                      Ipsum diam justo sed rebum vero dolor duo.
+                    </p>
+                  </div>
+                  <Facilities />
+                  <div className=" container line"></div>
+                  <FacilitiesSection />
+                  <div className=" container line"></div>
                 </div>
-            </section>
-            <section>
-                <p>part 2 added</p>
-            </section>
-        </>
-    )
-}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Contact Us */}
+      <section class="contact-us" id="contact">
+        <Contact />
+      </section>
+    </>
+  );
+};
 
-export default About
+export default About;

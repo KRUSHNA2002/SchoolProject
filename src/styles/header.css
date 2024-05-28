@@ -1,0 +1,22 @@
+.logo {
+    font-size: 25px !important;
+}
+
+.join_btn {
+    border-radius: 22px;
+    color: white;
+}
+
+.navbar-custom {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.active{
+    color: red !important;
+    font-weight: bold;
+    text-decoration:underline;
+}
+.navbar-nav{
+    margin-right: 40px;
+}

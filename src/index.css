@@ -5,9 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    /* background: linear-gradient(to bottom, #f2f2f2, #ffffff); */
+    /* background-color: black; */
+    /* color: white !important; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.headingname {
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
 }

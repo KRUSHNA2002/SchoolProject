@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import Header from '../components/common/Header';
 
 // components
 import AboutCard from '../components/sectioncompo/about/AboutCard';
@@ -19,8 +20,7 @@ const About = () => {
 
     return (
         <>
-         <body className='body-bg'>
-         <section>
+            <section>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-12 bg-img">
@@ -79,7 +79,6 @@ const About = () => {
                         <div className="col-md-12">
                             <Teachers />
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -124,7 +123,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-         </body>
+         {/* </body> */}
         </>
     )
 }
