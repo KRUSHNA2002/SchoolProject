@@ -4,10 +4,11 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container">
+        <div className="container ">
           <div className="row">
             <div className="col-md-12 text-center">
-              <h5>Still Water Public School<span>- call us at 514-888-2424</span></h5>
+              <h5><u>Still Water Hign School</u></h5>
+
             </div>
             <div className="col-md-12">
               <div className="row">
@@ -35,15 +36,14 @@ const Footer = () => {
                     <li>Art Room</li>
                   </ul>
                 </div>
-                <div className="col-md-3 ">
+                <div className="col-md-3 contact">
                   <h4>Contact</h4>
                   <ul>
                     <li><a href="#" target="_blank"><i className="fa fa-phone"></i></a>&nbsp;+434-23-232</li>
                     <li><a href="#" target="_blank"><i className="fa fa-phone"></i></a>&nbsp;Studifon&nbsp;+91-8894587893</li>
                     <li><a href="#" target="_blank"><i class="fa-regular fa-envelope"></i></a>&nbsp;stillwater@gmail.com</li>
                     <li><a href="#" target="_blank"><i class="fa-solid fa-fax"></i></a>&nbsp;+41 7645 34-2342</li>
-                    <li><a href="#" target="_blank"><i class="fa-solid fa-location-dot"></i></a>&nbsp;333 Ullrich Springs, Percyshire, DE 84325</li>
-
+                    <li><a href="#" target="_blank"><i class="fa-solid fa-location-dot"></i></a>&nbsp;333 Ullrich Springs,  Percyshire,  DE 84325</li>
                   </ul>
                 </div>
               </div>
@@ -54,8 +54,9 @@ const Footer = () => {
           <ul>
             <li><a href="#" target="_blank"><i className="fa fa-facebook"></i></a></li>
             <li><a href="#" target="_blank"><i className="fa fa-twitter"></i></a></li>
-            <li><a href="#" target="_blank"><i className="fa fa-instagram"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#" target="_blank"><i className="fa fa-google"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
           </ul>
         </div>
         <hr />
