@@ -19,7 +19,8 @@ const About = () => {
 
     return (
         <>
-            <section>
+         <body className='body-bg'>
+         <section>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-12 bg-img">
@@ -39,7 +40,9 @@ const About = () => {
                     </div>
                 </div>
             </section>
+             <div className="middele-div">
 
+             </div>
             <section>
                 <div className="container">
                     <div className="row mt-5">
@@ -121,6 +124,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
+         </body>
         </>
     )
 }

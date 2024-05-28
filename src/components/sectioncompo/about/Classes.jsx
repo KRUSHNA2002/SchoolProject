@@ -15,7 +15,7 @@ const Classes = () => {
         <div ref={ref}>
             <div className="container">
                 <div className="row">
-                    <div className={`col-md-4 mb-5 ${inView ? 'animated-slide-in-left' : ''}`}>
+                    <div className={` class-ani col-md-4 mb-5 ${inView ? 'animated-slide-in-left' : ''}`}>
                         <div className="card">
                             <img style={{ height: '200px' }} src={image} className="card-img-top" alt="..." />
                             <div className="card-body">
@@ -25,7 +25,7 @@ const Classes = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`col-md-4 mb-5 ${inView ? 'animated-slide-in-left' : ''}`}>
+                    <div className={` class-ani col-md-4 mb-5 ${inView ? 'animated-slide-in-left' : ''}`}>
                         <div className="card">
                             <img style={{ height: '200px' }} src={image1} className="card-img-top" alt="..." />
                             <div className="card-body">
@@ -35,7 +35,7 @@ const Classes = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={`col-md-4 mb-5 ${inView ? 'animated-slide-in-left' : ''}`}>
+                    <div className={` class-ani col-md-4 mb-5 ${inView ? 'animated-slide-in-left' : ''}`}>
                         <div className="card">
                             <img style={{ height: '200px' }} src={image2} className="card-img-top" alt="..." />
                             <div className="card-body">

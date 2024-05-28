@@ -15,10 +15,10 @@ const Facility = () => {
         <div ref={ref}  >
             <div className={`card mb-3 ${inView ? 'animated-zoom-out' : ''}`} style={{ maxWidth: '100%', maxHeight: '500px' }}>
                 <div className="row g-0" >
-                    <div className="col-md-5 col-12 p-2">
+                    <div className="col-md-4 col-12 p-2">
                         <img src={image3} alt="" style={{ width: '100%', maxHeight: '200px' }} />
                     </div>
-                    <div className="col-md-7 col-12 p-3 facility-us">
+                    <div className="col-md-8 col-12 p-3 facility-us">
                         <div className="card-body">
                             <h2 className="card-title text-center mb-3">Good Teachers</h2>
                             <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur id iure placeat voluptate molestiae laborum sed commodi, eaque at!</p>
@@ -31,7 +31,7 @@ const Facility = () => {
 
             <div className={`card mb-3 ${inView ? 'animated-zoom-out' : ''}`} style={{ maxWidth: '100%', maxHeight: '500px' }}>
                 <div className="row g-0" >
-                    <div className="col-md-7 col-12 p-3 facility-us">
+                    <div className="col-md-8 col-12 p-3 facility-us">
                         <div className="card-body">
                             <h2 className="card-title text-center mb-3">24 / 7 Support</h2>
                             <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur id iure placeat voluptate molestiae laborum sed commodi, eaque at!</p>
@@ -39,7 +39,7 @@ const Facility = () => {
 
                         </div>
                     </div>
-                    <div className="col-md-5 col-12 p-2">
+                    <div className="col-md-4 col-12 p-2">
                         <img src={image} alt="" style={{ width: '100%', maxHeight: '200px' }} />
                     </div>
                 </div>
@@ -47,10 +47,10 @@ const Facility = () => {
 
             <div className={`card mb-3 ${inView ? 'animated-zoom-out' : ''}`} style={{ maxWidth: '100%', maxHeight: '500px' }}>
                 <div className="row g-0" >
-                    <div className="col-md-5 col-12 p-2">
+                    <div className="col-md-4 col-12 p-2">
                         <img src={image2} alt="" style={{ width: '100%', maxHeight: '200px' }} />
                     </div>
-                    <div className="col-md-7 col-12 p-3 facility-us">
+                    <div className="col-md-8 col-12 p-3 facility-us">
                         <div className="card-body">
                             <h2 className="card-title text-center mb-3">Multi Courses</h2>
                             <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur id iure placeat voluptate molestiae laborum sed commodi, eaque at!</p>
@@ -63,7 +63,7 @@ const Facility = () => {
 
             <div className={`card mb-3 ${inView ? 'animated-zoom-out' : ''}`} style={{ maxWidth: '100%', maxHeight: '500px' }}>
                 <div className="row g-0" >
-                    <div className="col-md-7 col-12 p-3 facility-us">
+                    <div className="col-md-8 col-12 p-3 facility-us">
                         <div className="card-body">
                             <h2 className="card-title text-center mb-3">Library</h2>
                             <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem aspernatur id iure placeat voluptate molestiae laborum sed commodi, eaque at!</p>
@@ -71,7 +71,7 @@ const Facility = () => {
 
                         </div>
                     </div>
-                    <div className="col-md-5 col-12 p-2">
+                    <div className="col-md-4 col-12 p-2">
                         <img src={image1} alt="" style={{ width: '100%', maxHeight: '200px' }} />
                     </div>
                 </div>
