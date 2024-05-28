@@ -36,7 +36,6 @@ const Header = () => {
                 <Link
                   className={`nav-link text-dark ${isActive("/")}`}
                   aria-current="page"
-                  activeClassName="active"
                   to="/"
                 >
                   Home
@@ -98,7 +97,11 @@ const Header = () => {
           </div>
           <div className="col-auto d-none d-sm-block">
             <button className="btn btn-danger fs-5 join_btn">
-              <b>Join Us</b> <i className="fa-solid fa-arrow-right"></i>
+              <Link to={"/register"}>
+                {" "}
+                <b className="text-white text-decoration-underline">Join Us</b>
+              </Link>{" "}
+              <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>

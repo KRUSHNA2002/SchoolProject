@@ -8,18 +8,22 @@ import Classes from '../components/sectioncompo/about/Classes';
 import Teachers from '../components/sectioncompo/about/Teachers';
 import Testimonial from '../components/sectioncompo/about/Testimonial';
 import Facility from '../components/sectioncompo/about/Facility';
+import Header from '../components/common/Header';
+import MiniHeader from '../components/common/MiniHeader';
 
 const About = () => {
 
-        const scrollToTop = () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
-        };
+        // const scrollToTop = () => {
+        //     window.scrollTo({
+        //         top: 0,
+        //         behavior: "smooth"
+        //     });
+        // };
 
     return (
         <>
+        <MiniHeader/>
+        <Header/>
             <section>
                 <div className="container-fluid">
                     <div className="row">
@@ -114,7 +118,7 @@ const About = () => {
 
             {/* uparrow for go top section */}
 
-            <section>
+            {/* <section>
                 <div className="container">
                     <div className="row">
                         <div >
@@ -122,7 +126,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
          {/* </body> */}
         </>
     )

@@ -5,6 +5,8 @@ import App from './App';
 import '../src/styles/about.css';
 import '../src/styles/home.css';
 import '../src/styles/feedback.css';
+import '../src/styles/contact.css';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
