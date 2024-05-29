@@ -7,6 +7,7 @@ import Register from './components/auth/Register';
 import Contactus from './pages/Contactus';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import StudentDash from './components/dashboard/StudentDash';
+
 function App() {
   return (
     <>

@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Fade, Roll } from "react-awesome-reveal";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const getContactus = (e) => {
+    e.preventDefault();
+    const userArray = Object.values(formData);
+    console.log(userArray);
+    setFormData({
+      name: " ",
+      email: " ",
+      subject: " ",
+      message: " ",
+    });
+    alert("Message send Successfully");
+    // console.log(formData);
+  };
+
   return (
     <div>
       <section className="contact-us">
@@ -11,7 +40,7 @@ const Contact = () => {
               <Fade direction="left">
                 <div className="row">
                   <div className="col-lg-12">
-                    <form id="contact" action="" method="post">
+                    <form id="contact" onSubmit={getContactus}>
                       <div className="row">
                         <div className="col-lg-12">
                           <h2>Let's get in touch</h2>
@@ -23,6 +52,7 @@ const Contact = () => {
                               type="text"
                               id="name"
                               placeholder="YOUR NAME...*"
+                              onChange={handleChange}
                               required
                             />
                           </fieldset>
@@ -34,6 +64,7 @@ const Contact = () => {
                               type="email"
                               id="email"
                               placeholder="YOUR EMAIL..."
+                              onChange={handleChange}
                               required
                             />
                           </fieldset>
@@ -45,6 +76,7 @@ const Contact = () => {
                               type="text"
                               id="subject"
                               placeholder="SUBJECT...*"
+                              onChange={handleChange}
                               required
                             />
                           </fieldset>
@@ -56,6 +88,7 @@ const Contact = () => {
                               className="form-control"
                               id="message"
                               placeholder="YOUR MESSAGE..."
+                              onChange={handleChange}
                               required
                             ></textarea>
                           </fieldset>

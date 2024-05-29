@@ -25,11 +25,11 @@ const About = () => {
             <div className="col-md-12">
               <div className="container">
                 <div className="row">
-                  <div class="col-md-12 p-2">
-                    <h1 class="text-center mt-3">
+                  <div className="col-md-12 p-2">
+                    <h1 className="text-center mt-3">
                       School <b className="text-danger">Facilities</b>
                     </h1>
-                    <p class="text-center">
+                    <p className="text-center">
                       Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor
                       ut dolore lorem kasd vero ipsum sit eirmod sit. <br />{" "}
                       Ipsum diam justo sed rebum vero dolor duo.
@@ -46,7 +46,7 @@ const About = () => {
         </div>
       </section>
       {/* Contact Us */}
-      <section class="contact-us" id="contact">
+      <section className="contact-us" id="contact">
         <Contact />
       </section>
     </>
