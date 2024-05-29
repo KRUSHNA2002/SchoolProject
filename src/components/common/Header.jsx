@@ -87,8 +87,8 @@ const Header = () => {
               </li>
               <li className="nav-item mx-2">
                 <Link
-                  className={`nav-link text-dark ${isActive("/contact")}`}
-                  to="/contact"
+                  className={`nav-link text-dark ${isActive("/contactus")}`}
+                  to="/contactus"
                 >
                   Contact Us
                 </Link>

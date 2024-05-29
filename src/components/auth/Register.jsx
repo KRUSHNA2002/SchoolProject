@@ -1,18 +1,22 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link , useNavigate } from "react-router-dom";
 import MiniHeader from "../common/MiniHeader";
 import Header from "../common/Header";
 
-const RegisterForm = () => {
+const RegisterForm = ({history}) => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     username: "",
     email: "",
+    password: "",
     mobile: "",
     adhar: "",
-    address: "",
   });
+
+  // const history = useHistory();
+  const navigate = useNavigate();
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,8 +28,22 @@ const RegisterForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const userArray = Object.values(formData);
+    console.log(userArray);
+    setFormData({
+      firstName: "",
+      lastName: "",
+      username: "",
+      email: "",
+      password: "",
+      mobile: "",
+      adhar: "",
+    });
+    alert("Form submitted successfully!");
+    navigate("/login");
+
     // Handle form submission here
-    console.log(formData);
+    // console.log(formData);
   };
 
   return (
@@ -34,7 +52,7 @@ const RegisterForm = () => {
       <Header />
       <div className="container p-4">
         <div className="row justify-content-center">
-          <div className="col-md-6 shadow p-4 rounded border-0 bg-light">
+          <div className="col-md-6 shadow p-4 border-radius border-0 bg-light">
             <h1 className="text-center mb-4">Register</h1>
             <hr />
             <form onSubmit={handleSubmit}>
@@ -42,7 +60,7 @@ const RegisterForm = () => {
                 <div className="form-group col-md-6">
                   <input
                     type="text"
-                    className="form-control mt-2 order-radius border-0" 
+                    className="form-control mt-2 order-radius border-0"
                     id="firstName"
                     placeholder="First Name"
                     name="firstName"
@@ -56,7 +74,7 @@ const RegisterForm = () => {
                 <div className="form-group col-md-6">
                   <input
                     type="text"
-                    className="form-control mt-2 order-radius border-0" 
+                    className="form-control mt-2 order-radius border-0"
                     id="lastName"
                     placeholder="Last Name"
                     name="lastName"
@@ -71,7 +89,7 @@ const RegisterForm = () => {
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control mt-2 order-radius border-0" 
+                  className="form-control mt-2 order-radius border-0"
                   id="username"
                   placeholder="Username"
                   name="username"
@@ -85,7 +103,7 @@ const RegisterForm = () => {
               <div className="form-group">
                 <input
                   type="email"
-                  className="form-control mt-2 order-radius border-0" 
+                  className="form-control mt-2 order-radius border-0"
                   id="email"
                   placeholder="Email"
                   name="email"
@@ -98,8 +116,22 @@ const RegisterForm = () => {
 
               <div className="form-group">
                 <input
+                  type="password"
+                  className="form-control mt-2 order-radius border-0"
+                  id="password"
+                  placeholder="Password"
+                  name="password"
+                  value={formData.password}
+                  onChange={handleChange}
+                  required
+                  style={{ height: "43px" }}
+                />
+              </div>
+
+              <div className="form-group">
+                <input
                   type="tel"
-                  className="form-control mt-2 order-radius border-0" 
+                  className="form-control mt-2 order-radius border-0"
                   id="mobile"
                   placeholder="Mobile"
                   name="mobile"
@@ -113,7 +145,7 @@ const RegisterForm = () => {
               <div className="form-group">
                 <input
                   type="text"
-                  className="form-control mt-2 order-radius border-0" 
+                  className="form-control mt-2 order-radius border-0"
                   id="adhar"
                   placeholder="Adhar Number"
                   name="adhar"
@@ -124,7 +156,7 @@ const RegisterForm = () => {
                 />
               </div>
 
-              <div className="form-group">
+              {/* <div className="form-group">
                 <textarea
                   className="form-control mt-2 order-radius border-0" 
                   id="address"
@@ -136,7 +168,7 @@ const RegisterForm = () => {
                   required
                   style={{ height: "100px" }} 
                 ></textarea>
-              </div>
+              </div> */}
 
               <div className="d-flex justify-content-center mt-4">
                 <button
