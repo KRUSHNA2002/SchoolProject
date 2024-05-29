@@ -52,7 +52,7 @@ const Login = () => {
               <div className="row">
                 <div className="form-group col-md-12">
                   <label className="p-2" htmlFor="mobile">
-                    Enter mobile number...
+                    Enter Mobile Number...
                   </label>
                   <input
                     type="tel"
@@ -66,7 +66,7 @@ const Login = () => {
                     style={{ height: "45px" }}
                   />
                   <label className="p-2" htmlFor="password">
-                    Enter mobile number...
+                    Enter Password...
                   </label>
                   <input
                     type="password"
