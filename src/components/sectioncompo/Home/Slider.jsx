@@ -33,7 +33,7 @@ const Slider = () => {
                       Reiciendis fuga qui enim voluptates eum modi quisquam
                       corrupti.
                     </p>
-                    <div className="d-flex gap-2 col-6 mx-auto">
+                    <div className="d-flex gap-2 col-6 mx-auto d-none d-md-flex">
                       <button className="btn btn-lg rounded-lg text-white fw-bold btn-danger w-50">
                         Learn More
                       </button>
@@ -62,7 +62,7 @@ const Slider = () => {
                       Reiciendis fuga qui enim voluptates eum modi quisquam
                       corrupti.
                     </p>
-                    <div className="d-flex gap-2 col-6 mx-auto">
+                    <div className="d-flex gap-2 col-6 mx-auto d-none d-md-flex">
                       <button className="btn btn-lg rounded-lg text-white fw-bold btn-danger w-50">
                         Learn More
                       </button>
@@ -91,7 +91,7 @@ const Slider = () => {
                       Reiciendis fuga qui enim voluptates eum modi quisquam
                       corrupti.
                     </p>
-                    <div className="d-flex gap-2 col-6 mx-auto">
+                    <div className="d-flex gap-2 col-6 mx-auto d-none d-md-flex">
                       <button className="btn btn-lg rounded-lg text-white fw-bold btn-danger w-50">
                         Learn More
                       </button>

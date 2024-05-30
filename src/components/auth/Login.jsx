@@ -33,7 +33,7 @@ const Login = () => {
       mobile: "",
       adhar: "",
     });
-    alert("Form submitted successfully!");
+    alert("Login successfully!");
     navigate("/studentdash");
     // Handle form submission here
     // console.log(formData);

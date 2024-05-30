@@ -14,7 +14,7 @@
 }
 
 .card-hover:hover {
-  box-shadow: 0 0 10px rgba(242, 236, 236, 0.7);
+  box-shadow: 0 0 10px rgba(209, 49, 49, 0.7) !important;
 }
 
 .school_icons {

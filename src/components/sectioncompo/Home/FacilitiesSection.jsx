@@ -49,7 +49,7 @@ const FacilitiesSection1 = () => {
   });
 
   return (
-    <div ref={sectionRef} className="container">
+    <div ref={sectionRef} className="container mt-2">
       <div className="row">
         <animated.div style={fadeIn} className="col-md-6 p-3">
           <h2 className="fw-bold">
