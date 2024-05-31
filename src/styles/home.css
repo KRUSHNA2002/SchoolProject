@@ -1,6 +1,6 @@
 .bg-img-home
 {
-    background: linear-gradient(rgba(20, 18, 18, 0.50), rgba(17, 15, 15, 0.50)), url('../assets/images/about-bg.avif') center center no-repeat;
+    background: linear-gradient(rgba(20, 18, 18, 0.50), rgba(17, 15, 15, 0.50)), url('../assets/images/home/school-home.png') center center no-repeat;
 
     height: 450px;
     width: 100%;
@@ -45,3 +45,5 @@
   .animated-slide-down {
     animation: slideDown 0.9s ease forwards;
   }
+
+ 

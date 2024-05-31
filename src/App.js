@@ -6,6 +6,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import FeedBack from './pages/FeedBack';
 import ContactUs from './pages/contactUs';
+import ScrollToTopButton from './components/common/scrolltoTop';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/feedback" element={<FeedBack />} />
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
+        <ScrollToTopButton />
         <Footer />
       </Router>
 

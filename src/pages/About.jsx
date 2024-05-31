@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+
 
 // components
 import AboutCard from '../components/sectioncompo/about/AboutCard';
@@ -9,13 +10,6 @@ import Testimonial from '../components/sectioncompo/about/Testimonial';
 import Facility from '../components/sectioncompo/about/Facility';
 
 const About = () => {
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    };
 
     return (
         <>
@@ -105,15 +99,7 @@ const About = () => {
 
             {/* uparrow for go top section */}
 
-            <section>
-                <div className="container">
-                    <div className="row">
-                        <div >
-                            <p className='uparrow' onClick={scrollToTop}> <i className="fa-solid fa-arrow-up"></i></p>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
         </>
     )
 }

@@ -1,0 +1,23 @@
+/* scroll to top css section */
+
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border: none;
+  background-color: #1d7ce1;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1000;
+  padding: 15px 15px;
+  border-radius: 15px;
+  cursor: pointer;  
+}
+
+.scroll-to-top-button.visible {
+  display: block;
+}
+.scroll-to-top-button:hover{  
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}

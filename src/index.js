@@ -7,6 +7,7 @@ import '../src/styles/footer.css';
 import '../src/styles/header.css';
 import '../src/styles/contact.css';
 import '../src/styles/home.css';
+import '../src/styles/scrolltoTop.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

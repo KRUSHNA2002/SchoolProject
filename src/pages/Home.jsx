@@ -1,14 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-
+import { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 const About = () => {
     return (
         <>
-            {/* About section start */}
-
-            {/*  section first background image fiexed */}
-
             <section>
                 <div className="container-fluid">
                     <div className="row">
@@ -21,9 +16,6 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-            <section>
-                <p>part 2 added</p>
             </section>
         </>
     )
