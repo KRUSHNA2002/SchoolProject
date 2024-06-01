@@ -1,6 +1,8 @@
 /* scroll to top css section */
 
 .scroll-to-top-button {
+  height: 50px;
+  width: 50px;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -10,9 +12,9 @@
   color: #fff;
   cursor: pointer;
   z-index: 1000;
-  padding: 15px 15px;
-  border-radius: 15px;
+  border-radius: 50%;
   cursor: pointer;  
+  justify-content: center;
 }
 
 .scroll-to-top-button.visible {

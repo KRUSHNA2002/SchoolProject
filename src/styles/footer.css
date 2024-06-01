@@ -2,12 +2,13 @@
 footer {
   background-color: #1a1a1a;
   color: #fff;
-  padding: 20px 0;
+  padding:  20px;
+  padding-bottom: 0px;
 }
 footer .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px ;
 }
 .img{
   border: none;
@@ -71,4 +72,6 @@ footer i{
 }
 .copyright p {
   margin-left: 20px;
+  font-size: 18px;
+  
 }
