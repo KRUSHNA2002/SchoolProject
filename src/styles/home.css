@@ -1,6 +1,6 @@
 .bg-img-home
 {
-    background: linear-gradient(rgba(20, 18, 18, 0.50), rgba(17, 15, 15, 0.50)), url('../assets/images/home/school-home.png') center center no-repeat;
+    background: linear-gradient(rgba(20, 18, 18, 0.50), rgba(17, 15, 15, 0.50)), url('../assets/images/about-bg.avif') center center no-repeat;
 
     height: 450px;
     width: 100%;
@@ -13,19 +13,75 @@
     align-items: center;
     opacity: 0.9;
 }
-.home-heading
-{
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
+
+.school_icons {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-link
-{
+.class-img {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border: 10px solid #eacddd;
+}
 
-   display: flex;
-   justify-content:center;
-    font-weight: bold;
-    
+.user_icon {
+  font-size: 40px;
+}
+
+.classes-body {
+  background-color: #eacddd;
+  border-radius: 20px;
+}
+
+/* Slider */
+.slider-image {
+  height: 550px !important;
+  object-fit: cover;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.img-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-container img {
+  transition: transform 0.3s ease;
+}
+
+.img-container:hover img {
+  transform: scale(1.2);
+}
+
+h2 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.home-link {
+
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+
 }
 /* animation main heading */
 
@@ -45,5 +101,3 @@
   .animated-slide-down {
     animation: slideDown 0.9s ease forwards;
   }
-
- 

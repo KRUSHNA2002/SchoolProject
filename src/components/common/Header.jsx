@@ -1,14 +1,17 @@
-import React from 'react';
-import { NavLink } from "react-router-dom";
-
-
+import React from 'react'
 
 const Header = () => {
+  const location = useLocation();
+
+  // Function to determine if a NavLink should be active
+  const isActive = (path) => {
+    return location.pathname === path ? "active" : "";
+  };
   return (
-    <>
-      <h1>welcome to header</h1>
-    </>
+    <div>
+      <h1>Header Component</h1>
+    </div>
   )
 }
 
-export default Header
+export default Header;

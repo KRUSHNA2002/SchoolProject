@@ -1,6 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-
+import { Link } from 'react-router-dom';
 
 // components
 import AboutCard from '../components/sectioncompo/about/AboutCard';
@@ -8,11 +7,22 @@ import Classes from '../components/sectioncompo/about/Classes';
 import Teachers from '../components/sectioncompo/about/Teachers';
 import Testimonial from '../components/sectioncompo/about/Testimonial';
 import Facility from '../components/sectioncompo/about/Facility';
+import Header from '../components/common/Header';
+import MiniHeader from '../components/common/MiniHeader';
 
 const About = () => {
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
     return (
         <>
+            <MiniHeader />
+            <Header />
             <section>
                 <div className="container-fluid">
                     <div className="row">
@@ -26,7 +36,9 @@ const About = () => {
                     </div>
                 </div>
             </section>
+            <div className="middele-div">
 
+            </div>
             <section>
                 <div className="container">
                     <div className="row mt-5">
@@ -63,7 +75,6 @@ const About = () => {
                         <div className="col-md-12">
                             <Teachers />
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -99,7 +110,15 @@ const About = () => {
 
             {/* uparrow for go top section */}
 
-
+            <section>
+                <div className="container">
+                    <div className="row">
+                        <div >
+                            <p className='uparrow' onClick={scrollToTop}> <i className="fa-solid fa-arrow-up"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }

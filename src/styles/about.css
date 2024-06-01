@@ -1,3 +1,14 @@
+.body-bg
+{
+  background-image: linear-gradient(rgb(3, 2, 1), rgba(209, 203, 203, 0.44));
+}
+.middele-div
+{
+  height: 20px;
+  width: 100%;
+  background-image: linear-gradient(rgb(80,65,37), rgb(33,32,31));
+
+}
 .bg-img {
     background: linear-gradient(rgba(29, 28, 28, 0.44), rgba(17, 15, 15, 0.44)), url('../assets/images/about/school-about.png') center center no-repeat;
     height: 450px;
@@ -26,6 +37,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.class-ani :hover
+{
+   background-color: rgb(215, 226, 226);
+   animation-name: card-about;
+   animation-duration: 3s;
+}
+
+@keyframes card-about{
+  0%{transform: rotateY(0deg);}
+  100%{transform: rotateY(360deg);}
 }
 
 
@@ -75,6 +97,18 @@
         transform: scale(1);
         opacity: 1;
     }
+}
+
+.class-ani :hover
+{
+   background-color: rgb(215, 226, 226);
+   animation-name: card-about;
+   animation-duration: 2s;
+}
+
+@keyframes card-about{
+  0%{transform: rotateY(0deg);}
+  100%{transform: rotateY(360deg);}
 }
 
 .animated-zoom-out {
